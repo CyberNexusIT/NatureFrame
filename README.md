@@ -1,4 +1,5 @@
 # NatureFrame
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 Galeri foto bertema alam dengan nuansa putih dan biru 🌤️  
 Website ini menampilkan foto-foto alam berdasarkan kategori seperti Gunung, Pantai, Hutan, dan Langit.
