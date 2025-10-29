@@ -1,4 +1,4 @@
-<img src="ɳαƚυɾҽ_20251029_172253_0000.png" width="800"/>
+<img src="ɳαƚυɾҽ_20251029_172253_0000.png" width="800" style="border-radius:13px;"/>
 </p>
 
 # NatureFrame
