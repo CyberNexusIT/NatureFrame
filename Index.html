@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri Alam</title>
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #f8f9fc;
+    color: #333;
+  }
+
+  header {
+    background: linear-gradient(90deg, #2196f3, #6ec6ff);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 2px solid #e3f2fd;
+  }
+
+  nav button {
+    background: none;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #2196f3;
+    transition: 0.3s;
+  }
+
+  nav button:hover,
+  nav button.active {
+    background-color: #e3f2fd;
+    border-radius: 20px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 25px;
+  }
+
+  .photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .photo:hover {
+    transform: scale(1.05);
+  }
+
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+</head>
+<body>
+
+<header>🌿 Galeri Alam</header>
+
+<nav>
+  <button class="active" onclick="filterGallery('all')">Semua</button>
+  <button onclick="filterGallery('gunung')">Gunung</button>
+  <button onclick="filterGallery('pantai')">Pantai</button>
+  <button onclick="filterGallery('hutan')">Hutan</button>
+  <button onclick="filterGallery('langit')">Langit</button>
+</nav>
+
+<div class="gallery" id="gallery">
+  <!-- Gunung -->
+  <div class="photo gunung"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Gunung"></div>
+  <div class="photo gunung"><img src="https://images.unsplash.com/photo-1508264165352-258859e62245" alt="Gunung"></div>
+
+  <!-- Pantai -->
+  <div class="photo pantai"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Pantai"></div>
+  <div class="photo pantai"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Pantai"></div>
+
+  <!-- Hutan -->
+  <div class="photo hutan"><img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d" alt="Hutan"></div>
+  <div class="photo hutan"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Hutan"></div>
+
+  <!-- Langit -->
+  <div class="photo langit"><img src="https://images.unsplash.com/photo-1503264116251-35a269479413" alt="Langit"></div>
+  <div class="photo langit"><img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c" alt="Langit"></div>
+</div>
+
+<script>
+  function filterGallery(category) {
+    const photos = document.querySelectorAll('.photo');
+    const buttons = document.querySelectorAll('nav button');
+    
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    photos.forEach(photo => {
+      if (category === 'all' || photo.classList.contains(category)) {
+        photo.style.display = 'block';
+      } else {
+        photo.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
