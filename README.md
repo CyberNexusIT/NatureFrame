@@ -4,10 +4,7 @@ align="center">
 
 # NatureFrame
 
-![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![Made in](https://img.shields.io/badge/Made%20in-Indonesia-red)
+
 
 Galeri foto bertema alam dengan nuansa putih dan biru 🌤️  
 Website ini menampilkan foto-foto alam berdasarkan kategori seperti Gunung, Pantai, Hutan, dan Langit.
