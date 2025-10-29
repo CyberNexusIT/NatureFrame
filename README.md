@@ -1,8 +1,3 @@
-<style>
-  .img {
-    border-radius:10px;
-  }
-</style>
 <img src="ɳαƚυɾҽ_20251029_172253_0000.png" width="800" class="img"/>
 </p>
 
